@@ -22,6 +22,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
+# EvolutionX overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-evolution
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
@@ -29,6 +32,13 @@ PRODUCT_SOONG_NAMESPACES += \
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlayV430
+
+# EvoX flags
+TARGET_ENABLE_BLUR := false
+#WITH_GMS := true
+TARGET_USE_MINI_GAPPS := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_SUPPORT_BOOT_ANIMATIONS := true
 
 # Inherit vendor makefiles
 $(call inherit-product, vendor/vsmart/casuarina/casuarina-vendor.mk)
