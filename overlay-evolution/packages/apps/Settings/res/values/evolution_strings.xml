@@ -8,6 +8,5 @@
 
     <!-- Android version screen, build maintainer -->
 	<string name="build_maintainer_summary" translatable="false">Rum1ka</string>
-	<string name="build_maintainer_telegram">https://t.me/Rum1kaLab</string>
-	<!-- <string name="build_maintainer_donate_url" translatable="false"> </string> -->
+	<string name="build_maintainer_donate_url" translatable="false">https://t.me/Rum1kaLab</string>
 </resources>
